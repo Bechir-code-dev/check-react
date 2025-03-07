@@ -5,18 +5,12 @@ import Image from "./Image";
 import Name from "./Name";
 import Description from "./Description";
 import Price from "./Price";
-import product from "./product";
+
 
 function App() {
-  const firstName = "Bechiro";
-  const greeting = firstName ? `Hello, ${firstName}!` : "Hello, there!";
-  const imageDisplay = firstName ? (
-    <img
-      src={product.image}
-      alt="user"
-      style={{ width: "200px", borderRadius: "20%" }}
-    />
-  ) : null;
+  // we must declare variables
+  const firstName = prompt('Insert your name');
+  
 
   return (
     <>
@@ -37,11 +31,8 @@ function App() {
           </Button>
         </Card.Body>
       </Card>
-
-      <div style={{ marginTop: "20px", textAlign: "center" }}>
-        <p style={{ textDecoration: "underline" }}>{greeting}</p>
-        {imageDisplay}
-      </div>
+{ (firstName)?(<div><h2>Hello {firstName}</h2> <img src='./image1.jpg' alt='name'/></div>):(<h2>hello there !</h2>)}
+     
     </>
   );
 }

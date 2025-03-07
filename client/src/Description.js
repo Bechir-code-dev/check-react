@@ -4,3 +4,4 @@ const Description = () => {
     return <p>{product.description}</p>
 }
 export default Description ;
+// component for description

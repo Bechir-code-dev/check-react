@@ -4,3 +4,4 @@ import product from './product';
     return <img src={product.image} alt={product.name} style={{height:'auto', width:'auto', marginTop:'5px', marginLeft:'3px'}}></img>
  }
  export default Image ;
+ // component for image
